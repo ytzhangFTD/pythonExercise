@@ -1,0 +1,18 @@
+def person(name, gender, **wk):
+    print('{name:%s;gender:%s;other:%s}' %(name,gender,wk))
+    
+#person('ytzhang',12,city='beijing',time='20160725')
+
+
+
+def test(a,b,c=0,*args,city='beijing',**wk):
+    print('a=',a,'b=',b,'c=',c,'args=',args,'wk=',wk,'city=',city)
+    
+#test('a','b',4,'c','d',time='20160725',city='beijing')
+test('a','b',city='Hangzhou')
+
+[i for i in os.listdir('./..') if os.path.isfile(i)]
+
+os.path.isfile(os.listdir('./..')[-1])
+
+[('file',i,os.path.getsize(i)) for i in os.listdir('.') if os.path.isfile(i)]
