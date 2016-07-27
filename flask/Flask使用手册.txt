@@ -1,0 +1,6 @@
+安装过程不再赘述，
+windows下使用过程如下
+
+set FLASK_APP=hello.py // 先设置Flask应用的app
+
+python -m flask run // windows下运行Flask
